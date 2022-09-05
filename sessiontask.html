@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            background-color: aqua;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <div id="counter"></div>
+    <script>
+        //print 1 to 10 and then print Happy teachers day in browser by using setinertval
+
+        var timer = setInterval(count,1000)
+
+        let count1 = 0;
+        function count(){
+        count1++;
+        console.log(count1)
+        var target = document.getElementById('test')
+        target.innerHTML= count1;
+        document.body.append(target)
+        if(count1>=10){
+        clearInterval(timer)
+        }
+        if(count1===10){
+        console.log('HAPPY TEACHERS DAY')
+        var target = document.getElementById('test')
+        target.innerHTML= "HAPPY TEACHERS DAY";
+        }
+        }
+
+        //settimeout using for loop
+
+        var counter = document.getElementById('counter')
+        for (let i=1; i<=10; i++){
+        setTimeout(() => {
+        console.log(i)
+        counter.innerText=i
+        if(i===10){
+        console.log("HAPPY TEACHERS DAY")
+        counter.innerText="HAPPY TEACHERS DAY"
+        }
+        },1000*i)
+        }
+        
+    </script>
+</body>
+</html>

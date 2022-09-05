@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hi, hello")
+
+            setTimeout(timer,3000)
+            function timer (){
+                console.log("timer function called")
+            }
+
+            setTimeout(timer1,7000)
+            function timer1 (){
+                console.log("timer1 function called")
+            }
+
+            setTimeout(() => {
+                console.log("timer2 function called")
+            },5000)
+
+            console.log("hi, hello welcome")
+
+            //vercel
+        
+            setTimeout(add,2000,30,40)
+            function add(a,b){
+                console.log(a+b)
+            }
+            
+    </script>
+</body>
+</html>

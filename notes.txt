@@ -1,0 +1,53 @@
+DOM day 2:
+
+window util functions
+settimeout, setinterval, alert, prompt, confirm
+
+working with events=> addeventlistener()
+
+window: it is root of DOM
+settimeout, cleartimeout
+setinterval, clearinterval
+
+callback functions: a funtion which takes one or more funtion as a paramter is called callback.
+
+settimeout=> 
+
+to make javscript async we can use settimeout.
+it will be implemented or executed after specific time.
+it will be executed only once.
+
+syntax: settimeout(functionname, delaytime)
+
+delay=> the timer(1000ms = 1 sec)
+
+we can perform some smple arhtmetic operations
+
+cleartimeout => is not compulsory to use.
+
+setinterval=> 
+
+it will perorm again and again after a certain period of time.
+once we stop the function it will not get stopped automatically.
+
+syntax: setInterval(functionname, delaytime)
+
+once we are using clearinterval it will not get stopped.
+
+alert, confirm, prompt
+
+alert()=> is a pop up msg displaed whenever w eare openong the browser
+it has only one ok button
+
+confirm=> it has 2 buttons ok and cancel which seems true or false
+
+prompt=> the user has to give the input for the prompt
+it also has 2 buttons
+
+it is always ask a questo=ion to geting insde the browser.
+the user has to answer it.
+
+how to use events in DOM=> addeventlistener(eventname, functionname)
+
+
+ 

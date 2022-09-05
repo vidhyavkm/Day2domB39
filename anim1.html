@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #bar{
+    width:100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+    </style>
+</head>
+<body>
+    <div id="bar"></div>
+    <button onclick="Stop()">Stop</button>
+    <script>
+        var clearTime = setTimeout(anim,5000)
+        function anim(){
+            console.log("anim")
+            var division = document.getElementById('bar')
+            console.log(division)
+            division.style.width="200px"
+            division.style.backgroundColor="pink"
+        }
+        function Stop()
+        {
+            clearTimeout(clearTime)
+            console.log("Anim stopped")
+
+        }
+        
+    </script>
+</body>
+</html>
